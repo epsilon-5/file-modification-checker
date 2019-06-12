@@ -5,7 +5,7 @@
 
 class fmc {
     public $date;
-    public $project_url = "";
+    public $project_url = "test";
     public $current_filename = "@current.txt";
     public $modified_filename = "@modified.txt";
 
@@ -25,7 +25,12 @@ class fmc {
         if ($output !== false) return $this->set_color("\nФайл записан | {$current_fullpath}\n\n");
         else return $this->set_color("\nНе удалось записать файл | {$current_fullpath}\n\n", 1);
     }
+
     public function check() {
+        
+    }
+
+    public function clear() {
         
     }
 }
@@ -38,6 +43,9 @@ if ( !isset($argv[1]) ) exit ("Не указаны парамерты\n");
 switch ($argv[1]) {
     case "init":
         echo $fmc->init();
+        break;
+    case "clear":
+        echo $fmc->clear();
         break;
     default:
         echo "Неправильный параметр, доступно init\n";
