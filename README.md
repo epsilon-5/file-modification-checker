@@ -4,10 +4,10 @@ Compares the date and time of files and returns modified files
 
 # How it works
 
-This is a console application under Linux and PHP >= 5.4
+This is a Linux & PHP console application (PHP >= 5.4)
 
-1. **Edit the string "$project_url"**<br>
-   Enter here the absolute or relative path to the files whose date you want to compare.<br>
+1. **Edit string "$project_url"**<br>
+   Enter the absolute or relative path to the files whose date you want to compare.<br>
    (Example: public $project_url = "/var/www/vhosts/you-site.com/www";)
 
 
