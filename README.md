@@ -1,6 +1,6 @@
 # File Modification Checker
 
-Compares the date and time of files and returns modified files
+Compares the date and time of each file since the last edit and returns a list of modified files
 
 # How it works
 
